@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import Link from 'next/link'
+import React from 'react'
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
+import { DiCssdeck } from 'react-icons/di'
 
 import {
   Container,
@@ -10,7 +10,7 @@ import {
   Div3,
   NavLink,
   SocialIcons,
-} from './HeaderStyles';
+} from './HeaderStyles'
 
 const Header = () => (
   <Container>
@@ -39,17 +39,20 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/sahiltripathi2898" target="_blank">
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
       <SocialIcons
         href="https://www.linkedin.com/in/sahil-tripathi-1364a4191/"
         target="_blank"
       >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
+      <SocialIcons href="https://github.com/sahiltripathi2898" target="_blank">
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="mailto:sahil.tripathi2898@gmail.com" target="_blank">
+        <AiFillMail size="3rem" />
+      </SocialIcons>
     </Div3>
   </Container>
-);
+)
 
-export default Header;
+export default Header

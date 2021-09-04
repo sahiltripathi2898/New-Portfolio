@@ -9,7 +9,7 @@ const NavDropDown = (props) => (
     <DropDownItem href="#" target="_blank" rel="noreferrer">
       <DropDownIcon>
         <AiFillPhone/>
-      </DropDownIcon>
+      </DropDownIcon> 
       <DropDownTextContainer>
         <DropDownItemTitle>Phone</DropDownItemTitle>
         <DropDownItemDesc> Let's get together and have a chat?</DropDownItemDesc>
@@ -17,7 +17,7 @@ const NavDropDown = (props) => (
     </DropDownItem>
     <DropDownItem href="#" target="_blank" rel="noreferrer">
       <DropDownIcon>
-      <AiOutlineMail/>
+        <AiOutlineMail/>
       </DropDownIcon>
       <DropDownTextContainer>
         <DropDownItemTitle>Email</DropDownItemTitle>
@@ -26,7 +26,7 @@ const NavDropDown = (props) => (
     </DropDownItem>
     <DropDownItem href="#" target="_blank" rel="noreferrer">
       <DropDownIcon>
-      <FaLocationArrow/>
+        <FaLocationArrow/>
       </DropDownIcon>
       <DropDownTextContainer>
         <DropDownItemTitle>Address</DropDownItemTitle>
@@ -34,6 +34,6 @@ const NavDropDown = (props) => (
       </DropDownTextContainer>
     </DropDownItem>
   </DropDownContainer>
-);
+)
 
 export default NavDropDown
