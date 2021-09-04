@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
-  display: ${(props) => props.grid ? "grid" : "flex" };
-  flex-direction: ${(props) => props.row ? "row" : "column" };
-  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
+  display: ${(props) => props.grid ? 'grid' : 'flex' };
+  flex-direction: ${(props) => props.row ? 'row' : 'column' };
+  padding: ${(props) => props.nopadding ? '0' : '32px 48px 0' } ;
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
@@ -17,7 +17,7 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+    padding: ${(props) => props.nopadding ? '0' : '16px 16px 0' } ;
 
     width: calc(100vw - 32px);
     flex-direction: column;
@@ -55,7 +55,7 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  // max-width: 800px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
@@ -86,7 +86,7 @@ export const SectionDivider = styled.div`
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-    margin: ${(props) => props.divider ? "4rem 0" : "" };
+    margin: ${(props) => props.divider ? '4rem 0' : '' };
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;
