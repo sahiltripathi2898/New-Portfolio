@@ -1,15 +1,15 @@
-import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import React from 'react'
+import { DiAptana, DiReact, DiUikit, DiDatabase } from 'react-icons/di'
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents'
+import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles'
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      From Front-End To Back-End
     </SectionText>
     <List>
       <ListItem>
@@ -19,38 +19,53 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+            HTML <br />
+            CSS <br />
+            ReactJS <br />
+            VueJS <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <DiAptana size="3rem" />
         </picture>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node and Databases
+            NodeJS <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <DiDatabase size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Databases</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            MySQL <br />
+            MongoDB <br />
+            Druid <br />
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <DiUikit size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Other Tools</ListTitle>
+          <ListParagraph>
+            Figma <br />
+            Adobe <br />
+            GitHub <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
     <SectionDivider colorAlt />
   </Section>
-);
+)
 
-export default Technologies;
+export default Technologies
